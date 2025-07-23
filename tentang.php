@@ -248,7 +248,7 @@ $jumlahTenant = max(1, (int)$jumlahTenant); // Minimal 1 tenant
                 <div class="col-lg-6">
                     <div class="about-image">
                         <div class="bg-light rounded-4 overflow-hidden" style="min-height: 400px; height: 100%; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
-                            <img src="images/foto-utama.jpg" alt="Foto Utama <?= htmlspecialchars($siteInfo['name']) ?>"
+                            <img src="images/foto-utama2.jpg" alt="Foto Utama <?= htmlspecialchars($siteInfo['name']) ?>"
                                 class="img-fluid w-100 h-100"
                                 style="object-fit: cover;">
                         </div>
@@ -346,8 +346,8 @@ $jumlahTenant = max(1, (int)$jumlahTenant); // Minimal 1 tenant
                                                     <?php if (isset($hour['is_open']) && $hour['is_open'] == 1): ?>
                                                         <span class="badge bg-success me-2">Buka</span>
                                                         <span class="text-muted">
-                                                            <?= htmlspecialchars($hour['open_time'] ?? '17:00') ?> -
-                                                            <?= htmlspecialchars($hour['close_time'] ?? '24:00') ?>
+                                                            <?= htmlspecialchars($hour['open_time'] ?? '07:00') ?> -
+                                                            <?= htmlspecialchars($hour['close_time'] ?? '23:00') ?>
                                                         </span>
                                                     <?php else: ?>
                                                         <span class="badge bg-danger">Tutup</span>
@@ -367,14 +367,14 @@ $jumlahTenant = max(1, (int)$jumlahTenant); // Minimal 1 tenant
                                             <div class="bg-light p-3 rounded mb-3">
                                                 <h6 class="mb-2">Senin - Kamis</h6>
                                                 <span class="badge bg-success me-2">Buka</span>
-                                                <span class="text-muted">17:00 - 23:00</span>
+                                                <span class="text-muted">07:00 - 23:00</span>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="bg-light p-3 rounded mb-3">
                                                 <h6 class="mb-2">Jumat - Minggu</h6>
                                                 <span class="badge bg-success me-2">Buka</span>
-                                                <span class="text-muted">17:00 - 23:00</span>
+                                                <span class="text-muted">07:00 - 23:00</span>
                                             </div>
                                         </div>
                                     </div>
@@ -405,8 +405,8 @@ $jumlahTenant = max(1, (int)$jumlahTenant); // Minimal 1 tenant
                             </div>
                             <h3 class="fw-bold mb-4">Visi</h3>
                             <p class="fs-5 text-muted">
-                                Menjadi destinasi kuliner outdoor terdepan di Surabaya yang menghadirkan
-                                pengalaman berkuliner yang berkesan, nyaman, dan terjangkau untuk semua kalangan.
+                                Gotong Royong Menuju
+                                Surabaya Kota Dunia yang Maju, Humanis dan Berkelanjutan
                             </p>
                         </div>
                     </div>
@@ -420,10 +420,11 @@ $jumlahTenant = max(1, (int)$jumlahTenant); // Minimal 1 tenant
                             </div>
                             <h3 class="fw-bold mb-4">Misi</h3>
                             <ul class="list-unstyled fs-5 text-muted text-start">
-                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i>Menyediakan platform bagi UMKM kuliner lokal</li>
-                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i>Menghadirkan suasana kuliner yang nyaman dan higienis</li>
-                                <li class="mb-3"><i class="fas fa-check text-primary me-2"></i>Memberikan hiburan dan fasilitas pendukung</li>
-                                <li class="mb-0"><i class="fas fa-check text-primary me-2"></i>Membangun komunitas pecinta kuliner</li>
+                                <li class="mb-3"><i></i>Mewujudkan perekonomian inklusif untuk meningkatkan kesejahteraan rakyat
+                                    dan pembukaan lapangan kerja baru melalui penguatan kemandirian ekonomi lokal,
+                                    kondusifitas iklim investasi, penguatan daya saing Surabaya sebagai pusat
+                                    penghubung perdagangan dan jasa antar pulau serta internasional.</li>
+
                             </ul>
                         </div>
                     </div>

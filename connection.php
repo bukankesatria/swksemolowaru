@@ -33,7 +33,7 @@ try {
             'address' => 'Alamat tidak tersedia',
             'rating' => 'N/A',
             'reviews' => '0',
-            'hours' => '17:00 - 24:00',
+            'hours' => '07:00 - 23:00',
             'phone' => '000000000000',
             'instagram' => '@username'
         ];
@@ -109,7 +109,7 @@ $semuaMenuItems = $semuaMenuResult->fetchAll(PDO::FETCH_ASSOC);
     $menuItems = [];
     $operatingHours = [];
     $formattedHours = [];
-    $todayHours = '17:00 - 24:00';
+    $todayHours = '07:00 - 23:00';
     error_log("Database error: " . $e->getMessage());
 }
 
@@ -351,7 +351,7 @@ function getOperationalData() {
     global $siteInfo, $totalTenants, $totalFasilitasUtama, $todayHours;
 
     return [
-        'hours' => $todayHours ?: '17:00 - 24:00',
+        'hours' => $todayHours ?: '07:00 - 23:00',
         'capacity' => '500+',
         'tenants' => ($totalTenants > 0) ? $totalTenants . '+' : '20+',
         'area' => '2000 m²',
@@ -486,7 +486,7 @@ function getOperationalDataWithGallery() {
     global $siteInfo, $totalTenants, $totalFasilitasUtama, $todayHours, $totalGalleryItems;
 
     return [
-        'hours' => $todayHours ?: '17:00 - 24:00',
+        'hours' => $todayHours ?: '07:00 - 23:00',
         'capacity' => '500+',
         'tenants' => ($totalTenants > 0) ? $totalTenants . '+' : '20+',
         'area' => '2000 m²',
