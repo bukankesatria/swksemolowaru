@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jul 21, 2025 at 03:38 PM
+-- Generation Time: Jul 23, 2025 at 07:48 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -147,11 +147,12 @@ INSERT INTO `gallery` (`id`, `title`, `description`, `category`, `image_url`, `a
 (7, 'Event Spesial', 'Acara khusus yang diselenggarakan di SWK Semolowaru', 'Event', 'images/gallery/event-spesial.jpg', 'Event khusus SWK Semolowaru'),
 (10, 'Area Futsal dan Basket', 'Fasilitas lapangan futsal dan basket yang dapat disewa oleh pengunjung', 'Fasilitas', 'images/gallery/futsal-area.jpg', 'Futsal dan Basket SWK Semolowaru'),
 (11, 'Aktivitas Anak', 'Anak-anak bermain dengan gembira di area bermain', 'Pengunjung', 'images/gallery/aktivitas-anak.jpg', 'Aktivitas anak SWK Semolowaru'),
-(12, 'Pemandangan Outdoor', 'Pemandangan outdoor yang nyaman dan asri', 'Suasana', 'images/gallery/pemandangan-outdoor.jpg', 'Pemandangan outdoor SWK Semolowaru'),
+(12, 'Pemandangan Outdoor', 'Pemandangan outdoor yang nyaman dan asri', 'Suasana', 'images/gallery/pemandangan-outdoor2.jpg', 'Pemandangan outdoor SWK Semolowaru'),
 (13, 'Area Toilet', 'Fasilitas Toilet yang dapat digunakan oleh pengunjung', 'Fasilitas', 'images/gallery/toilet-area.jpg', 'Toilet SWK Semolowaru'),
 (14, 'Momen Kebersamaan', 'Momen kebersamaan bersama teman-teman', 'Pengunjung', 'images/gallery/momen-kebersamaan2.jpg', 'Momen Kebersamaan SWK Semolowaru'),
 (15, 'Area Mushola', 'Fasilitas Mushola yang dapat digunakan oleh pengunjung', 'Fasilitas', 'images/gallery/mushola-area.jpg', 'Mushola SWK Semolowaru'),
-(16, 'Area Bermain Anak-anak', 'Fasilitas Bermain Anak-anak yang dapat digunakan oleh pengunjung', 'Fasilitas', 'images/gallery/kids-area.jpg', 'Bermain Anak-anak SWK Semolowaru');
+(16, 'Area Bermain Anak-anak', 'Fasilitas Bermain Anak-anak yang dapat digunakan oleh pengunjung', 'Fasilitas', 'images/gallery/kids-area.jpg', 'Bermain Anak-anak SWK Semolowaru'),
+(17, 'Area Parkir', 'Fasilitas Parkir bagi pengunjung', 'Fasilitas', 'images/gallery/parkir-area.jpg', 'Parkir SWK Semolowaru');
 
 -- --------------------------------------------------------
 
@@ -245,13 +246,13 @@ CREATE TABLE `operating_hours` (
 --
 
 INSERT INTO `operating_hours` (`id`, `day_name`, `day_number`, `open_time`, `close_time`, `is_open`, `created_at`) VALUES
-(1, 'Minggu', 0, '17:00:00', '23:00:00', 1, '2025-07-02 14:24:24'),
-(2, 'Senin', 1, '17:00:00', '23:00:00', 1, '2025-07-02 14:24:24'),
-(3, 'Selasa', 2, '17:00:00', '23:00:00', 1, '2025-07-02 14:24:24'),
-(4, 'Rabu', 3, '17:00:00', '23:00:00', 1, '2025-07-02 14:24:24'),
-(5, 'Kamis', 4, '17:00:00', '23:00:00', 1, '2025-07-02 14:24:24'),
-(6, 'Jumat', 5, '17:00:00', '23:00:00', 1, '2025-07-02 14:24:24'),
-(7, 'Sabtu', 6, '17:00:00', '23:00:00', 1, '2025-07-02 14:24:24');
+(1, 'Minggu', 0, '07:00:00', '23:00:00', 1, '2025-07-02 14:24:24'),
+(2, 'Senin', 1, '07:00:00', '23:00:00', 1, '2025-07-02 14:24:24'),
+(3, 'Selasa', 2, '07:00:00', '23:00:00', 1, '2025-07-02 14:24:24'),
+(4, 'Rabu', 3, '07:00:00', '23:00:00', 1, '2025-07-02 14:24:24'),
+(5, 'Kamis', 4, '07:00:00', '23:00:00', 1, '2025-07-02 14:24:24'),
+(6, 'Jumat', 5, '07:00:00', '23:00:00', 1, '2025-07-02 14:24:24'),
+(7, 'Sabtu', 6, '07:00:00', '23:00:00', 1, '2025-07-02 14:24:24');
 
 -- --------------------------------------------------------
 
@@ -403,7 +404,7 @@ ALTER TABLE `fitur_fasilitas`
 -- AUTO_INCREMENT for table `gallery`
 --
 ALTER TABLE `gallery`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `menu_andalan`
