@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jul 23, 2025 at 07:48 PM
+-- Generation Time: Jul 25, 2025 at 03:15 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -138,20 +138,20 @@ CREATE TABLE `gallery` (
 --
 
 INSERT INTO `gallery` (`id`, `title`, `description`, `category`, `image_url`, `alt`) VALUES
-(1, 'Suasana Malam Hari', 'Pengunjung menikmati kuliner di malam hari dengan live music', 'Suasana', 'images/gallery/suasana-malam.jpg', 'Suasana malam SWK Semolowaru'),
-(2, 'Live Music Performance', 'Pertunjukan musik live yang menghibur pengunjung', 'Hiburan', 'images/gallery/live-music.jpg', 'Live music di SWK Semolowaru'),
-(3, 'Area Skateboard', 'Fasilitas skateboard yang gratis untuk semua pengunjung', 'Fasilitas', 'images/gallery/skateboard-area.jpg', 'Area skateboard SWK Semolowaru'),
-(4, 'Keluarga Bahagia', 'Keluarga menikmati waktu bersama di SWK Semolowaru', 'Pengunjung', 'images/gallery/keluarga-bahagia.jpg', 'Keluarga di SWK Semolowaru'),
-(5, 'Aneka Kuliner', 'Berbagai pilihan makanan dari tenant-tenant terbaik', 'Kuliner', 'images/gallery/aneka-kuliner2.jpg', 'Aneka kuliner SWK Semolowaru'),
-(6, 'Suasana Siang', 'Aktivitas siang hari yang ramai dengan pengunjung', 'Suasana', 'images/gallery/suasana-siang.jpg', 'Suasana siang SWK Semolowaru'),
-(7, 'Event Spesial', 'Acara khusus yang diselenggarakan di SWK Semolowaru', 'Event', 'images/gallery/event-spesial.jpg', 'Event khusus SWK Semolowaru'),
-(10, 'Area Futsal dan Basket', 'Fasilitas lapangan futsal dan basket yang dapat disewa oleh pengunjung', 'Fasilitas', 'images/gallery/futsal-area.jpg', 'Futsal dan Basket SWK Semolowaru'),
-(11, 'Aktivitas Anak', 'Anak-anak bermain dengan gembira di area bermain', 'Pengunjung', 'images/gallery/aktivitas-anak.jpg', 'Aktivitas anak SWK Semolowaru'),
-(12, 'Pemandangan Outdoor', 'Pemandangan outdoor yang nyaman dan asri', 'Suasana', 'images/gallery/pemandangan-outdoor2.jpg', 'Pemandangan outdoor SWK Semolowaru'),
+(1, 'Suasana Malam Hari', 'Pengunjung menikmati kuliner di malam hari dengan live music', 'Suasana', 'images/gallery/suasana-malam.JPG', 'Suasana malam SWK Semolowaru'),
+(2, 'Live Music Performance', 'Pertunjukan musik live yang menghibur pengunjung', 'Hiburan', 'images/gallery/live-music.JPG', 'Live music di SWK Semolowaru'),
+(3, 'Area Skateboard', 'Fasilitas skateboard yang gratis untuk semua pengunjung', 'Fasilitas', 'images/gallery/skateboard-area.JPG', 'Area skateboard SWK Semolowaru'),
+(4, 'Keluarga Bahagia', 'Keluarga menikmati waktu bersama di SWK Semolowaru', 'Pengunjung', 'images/gallery/keluarga-bahagia.JPG', 'Keluarga di SWK Semolowaru'),
+(5, 'Aneka Kuliner', 'Berbagai pilihan makanan dari tenant-tenant terbaik', 'Kuliner', 'images/gallery/aneka-kuliner2.JPG', 'Aneka kuliner SWK Semolowaru'),
+(6, 'Suasana Siang', 'Aktivitas siang hari yang ramai dengan pengunjung', 'Suasana', 'images/gallery/suasana-siang.JPG', 'Suasana siang SWK Semolowaru'),
+(7, 'Event Spesial', 'Acara khusus yang diselenggarakan di SWK Semolowaru', 'Event', 'images/gallery/event-spesial.JPG', 'Event khusus SWK Semolowaru'),
+(10, 'Area Futsal dan Basket', 'Fasilitas lapangan futsal dan basket yang dapat disewa oleh pengunjung', 'Fasilitas', 'images/gallery/futsal-area.JPG', 'Futsal dan Basket SWK Semolowaru'),
+(11, 'Aktivitas Anak', 'Anak-anak bermain dengan gembira di area bermain', 'Pengunjung', 'images/gallery/aktivitas-anak.JPG', 'Aktivitas anak SWK Semolowaru'),
+(12, 'Pemandangan Outdoor', 'Pemandangan outdoor yang nyaman dan asri', 'Suasana', 'images/gallery/pemandangan-outdoor2.JPG', 'Pemandangan outdoor SWK Semolowaru'),
 (13, 'Area Toilet', 'Fasilitas Toilet yang dapat digunakan oleh pengunjung', 'Fasilitas', 'images/gallery/toilet-area.jpg', 'Toilet SWK Semolowaru'),
 (14, 'Momen Kebersamaan', 'Momen kebersamaan bersama teman-teman', 'Pengunjung', 'images/gallery/momen-kebersamaan2.jpg', 'Momen Kebersamaan SWK Semolowaru'),
 (15, 'Area Mushola', 'Fasilitas Mushola yang dapat digunakan oleh pengunjung', 'Fasilitas', 'images/gallery/mushola-area.jpg', 'Mushola SWK Semolowaru'),
-(16, 'Area Bermain Anak-anak', 'Fasilitas Bermain Anak-anak yang dapat digunakan oleh pengunjung', 'Fasilitas', 'images/gallery/kids-area.jpg', 'Bermain Anak-anak SWK Semolowaru'),
+(16, 'Area Bermain Anak-anak', 'Fasilitas Bermain Anak-anak yang dapat digunakan oleh pengunjung', 'Fasilitas', 'images/gallery/kids-area.JPG', 'Bermain Anak-anak SWK Semolowaru'),
 (17, 'Area Parkir', 'Fasilitas Parkir bagi pengunjung', 'Fasilitas', 'images/gallery/parkir-area.jpg', 'Parkir SWK Semolowaru');
 
 -- --------------------------------------------------------
