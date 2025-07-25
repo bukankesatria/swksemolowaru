@@ -441,10 +441,10 @@ require_once 'connection.php';
                                 <div class="card tenant-card">
                                     <div class="tenant-image"
                                         <?php if (!empty($tenant['foto_url'])): ?>
-                                        onclick="openImagePopup('<?= htmlspecialchars('/websitekkn/images/tenan/' . $tenant['foto_url']) ?>', '<?= htmlspecialchars($tenant['nama_tenan']) ?>', '<?= htmlspecialchars($tenant['range_harga']) ?>')"
+                                        onclick="openImagePopup('<?= htmlspecialchars('images/tenan/' . $tenant['foto_url']) ?>', '<?= htmlspecialchars($tenant['nama_tenan']) ?>', '<?= htmlspecialchars($tenant['range_harga']) ?>')"
                                         <?php endif; ?>>
                                         <?php if (!empty($tenant['foto_url'])): ?>
-                                            <img src="<?= htmlspecialchars('/websitekkn/images/tenan/' . $tenant['foto_url']) ?>" alt="<?= htmlspecialchars($tenant['nama_tenan']) ?>">
+                                            <img src="<?= htmlspecialchars('images/tenan/' . $tenant['foto_url']) ?>" alt="<?= htmlspecialchars($tenant['nama_tenan']) ?>">
                                         <?php else: ?>
                                             <div class="image-placeholder">
                                                 <i class="fas fa-store"></i>

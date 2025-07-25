@@ -4,11 +4,11 @@ require_once 'connection.php';
 
 // Array gambar untuk slideshow (sesuaikan dengan gambar yang ada di folder images)
 $heroImages = [
-    'images/foto-utama2.jpg',
-    'images/aneka-kuliner2.jpg',
-    'images/event-spesial.jpg',
-    'images/futsal-area.jpg',
-    'images/skateboard-area.jpg'
+    'images/foto-utama2.JPG',
+    'images/aneka-kuliner2.JPG',
+    'images/event-spesial.JPG',
+    'images/futsal-area.JPG',
+    'images/skateboard-area.JPG'
 ];
 ?>
 

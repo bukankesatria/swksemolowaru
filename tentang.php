@@ -248,7 +248,7 @@ $jumlahTenant = max(1, (int)$jumlahTenant); // Minimal 1 tenant
                 <div class="col-lg-6">
                     <div class="about-image">
                         <div class="bg-light rounded-4 overflow-hidden" style="min-height: 400px; height: 100%; background: linear-gradient(45deg, #f8f9fa, #e9ecef);">
-                            <img src="images/foto-utama2.jpg" alt="Foto Utama <?= htmlspecialchars($siteInfo['name']) ?>"
+                            <img src="images/foto-utama2.JPG" alt="Foto Utama <?= htmlspecialchars($siteInfo['name']) ?>"
                                 class="img-fluid w-100 h-100"
                                 style="object-fit: cover;">
                         </div>

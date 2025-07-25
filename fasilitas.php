@@ -320,35 +320,35 @@ require_once 'connection.php';
                             <!-- Slide 2 -->
                             <div class="slide">
                                 <div class="slide-content text-center">
-                                    <img src="images/icons/futsal.jpg" alt="Lapangan Futsal dan Basket" class="slide-icon mb-3" style="width: 800px; height: auto;">
+                                    <img src="images/icons/futsal.JPG" alt="Lapangan Futsal dan Basket" class="slide-icon mb-3" style="width: 800px; height: auto;">
                                 </div>
                             </div>
 
                             <!-- Slide 3 -->
                             <div class="slide">
                                 <div class="slide-content text-center">
-                                    <img src="images/icons/music.jpg" alt="Live Music" class="slide-icon mb-3" style="width: 800px; height: auto;">
+                                    <img src="images/icons/music.JPG" alt="Live Music" class="slide-icon mb-3" style="width: 800px; height: auto;">
                                 </div>
                             </div>
 
                             <!-- Slide 4 -->
                             <div class="slide">
                                 <div class="slide-content text-center">
-                                    <img src="images/icons/skateboard.jpg" alt="Skateboard Area" class="slide-icon mb-3" style="width: 800px; height: auto;">
+                                    <img src="images/icons/skateboard.JPG" alt="Skateboard Area" class="slide-icon mb-3" style="width: 800px; height: auto;">
                                 </div>
                             </div>
 
                             <!-- Slide 5 -->
                             <div class="slide">
                                 <div class="slide-content text-center">
-                                    <img src="images/icons/kids-zone.jpg" alt="Kids Zone" class="slide-icon mb-3" style="width: 800px; height: auto;">
+                                    <img src="images/icons/kids-zone.JPG" alt="Kids Zone" class="slide-icon mb-3" style="width: 800px; height: auto;">
                                 </div>
                             </div>
 
                             <!-- Slide 6 -->
                             <div class="slide">
                                 <div class="slide-content text-center">
-                                    <img src="images/icons/foodcourt.jpg" alt="Food Court" class="slide-icon mb-3" style="width: 800px; height: auto;">
+                                    <img src="images/icons/foodcourt.JPG" alt="Food Court" class="slide-icon mb-3" style="width: 800px; height: auto;">
                                 </div>
                             </div>
 
