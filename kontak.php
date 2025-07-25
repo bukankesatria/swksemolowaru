@@ -947,7 +947,7 @@ require_once 'connection.php';
                         </div>
                         <div class="mb-3">
                             <i class="fas fa-bus text-primary me-2"></i>
-                            <span>Akses transportasi umum mudah</span>
+                            <span>Akses transportasi umum mudah (Wara-wiri, Ojek Online)</span>
                         </div>
                     </div>
                 </div>
