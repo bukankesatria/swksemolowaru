@@ -187,6 +187,167 @@ require_once 'connection.php';
             opacity: 0.5;
         }
 
+        /* Registration Flow Styles */
+        .registration-section {
+            background: #f8f9fa;
+            padding: 4rem 0;
+            margin-top: 4rem;
+        }
+
+        .process-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .process-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .process-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        }
+
+        .process-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        .process-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--dark-color);
+            margin-bottom: 1rem;
+        }
+
+        .process-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        .documents-section {
+            background: white;
+            padding: 4rem 0;
+        }
+
+        .document-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            height: 100%;
+            border: 2px solid transparent;
+        }
+
+        .document-card:hover {
+            background: white;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary-color);
+            transform: translateY(-5px);
+        }
+
+        .document-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin: 0 auto 1.5rem;
+        }
+
+        .document-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--dark-color);
+            margin-bottom: 1rem;
+        }
+
+        .download-btn {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border: none;
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .download-btn:hover {
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .requirements-section {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 4rem 0;
+        }
+
+        .requirement-item {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .requirement-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .requirement-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+
+        .requirement-text {
+            flex: 1;
+            margin: 0;
+            color: var(--dark-color);
+            line-height: 1.5;
+        }
+
         /* Image Popup Styles */
         .image-popup {
             position: fixed;
@@ -337,6 +498,21 @@ require_once 'connection.php';
 
             .image-popup-title h3 {
                 font-size: 1.1rem;
+            }
+
+            .process-card,
+            .document-card {
+                margin-bottom: 2rem;
+            }
+
+            .requirement-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .requirement-icon {
+                margin-right: 0;
+                margin-bottom: 1rem;
             }
         }
 
@@ -491,6 +667,181 @@ require_once 'connection.php';
         </div>
     </section>
 
+    <!-- Registration Process Section -->
+    <section class="registration-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Ingin Menjadi Tenant Baru?</h2>
+                <p class="fs-5 text-muted">Ikuti alur pendaftaran pedagang baru di SWK Semolowaru</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="process-card">
+                        <div class="process-number">1</div>
+                        <h4 class="process-title">Survey Lokasi</h4>
+                        <p class="process-description">
+                            Calon pedagang melakukan survey lokasi didampingi oleh pendamping sesuai kesepakatan bertemu.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="process-card">
+                        <div class="process-number">2</div>
+                        <h4 class="process-title">Pengisian Form & Berkas</h4>
+                        <p class="process-description">
+                            Mengisi form pedagang baru dan melengkapi persyaratan: Fotocopy KTP, Pas foto 4x6 (2 lembar), Surat Pernyataan bermaterai Rp 10.000.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="process-card">
+                        <div class="process-number">3</div>
+                        <h4 class="process-title">Penyampaian ke Dinkopdag</h4>
+                        <p class="process-description">
+                            Berkas permohonan disampaikan ke Dinkopdag untuk mendapat disposisi pimpinan (setuju, tidak setuju, atau ditindaklanjuti).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="process-card">
+                        <div class="process-number">4</div>
+                        <h4 class="process-title">Survey Peninjauan Lokasi</h4>
+                        <p class="process-description">
+                            Jika ditindaklanjuti, pendamping koordinasi dengan DPMPTSP untuk survey peninjauan lokasi dan upload berkas di sswalfa.surabaya.go.id.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="process-card">
+                        <div class="process-number">5</div>
+                        <h4 class="process-title">Penerbitan SK Perijinan</h4>
+                        <p class="process-description">
+                            SK Perijinan pemakaian sentra makanan dan minuman terbit dari instansi terkait.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="process-card">
+                        <div class="process-number">6</div>
+                        <h4 class="process-title">Mulai Berjualan</h4>
+                        <p class="process-description">
+                            Calon pedagang dipersilahkan untuk memulai aktivitas berjualan di lokasi yang telah ditentukan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements Section -->
+    <section class="requirements-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Persyaratan Pendaftaran</h2>
+                <p class="fs-5 text-muted">Lengkapi dokumen berikut untuk proses pendaftaran yang lancar</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="requirement-item">
+                        <div class="requirement-icon">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <p class="requirement-text">
+                            <strong>Fotocopy Kartu Tanda Penduduk (KTP)</strong> yang masih berlaku sebanyak 1 (satu) lembar
+                        </p>
+                    </div>
+
+                    <div class="requirement-item">
+                        <div class="requirement-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <p class="requirement-text">
+                            <strong>Pas foto berukuran 4x6 cm</strong> terbaru sebanyak 2 (dua) lembar
+                        </p>
+                    </div>
+
+                    <div class="requirement-item">
+                        <div class="requirement-icon">
+                            <i class="fas fa-file-signature"></i>
+                        </div>
+                        <p class="requirement-text">
+                            <strong>Surat Pernyataan bermaterai Rp 10.000</strong> (format dapat diunduh di bawah)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documents Download Section -->
+    <section class="documents-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Dokumen Pendaftaran</h2>
+                <p class="fs-5 text-muted">Unduh dokumen yang diperlukan untuk proses pendaftaran pedagang baru di Sentra Wisata Kuliner</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="document-card">
+                        <div class="document-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h4 class="document-title">Form Permohonan Pedagang Baru</h4>
+                        <p class="text-muted mb-4">Surat permohonan dan surat pernyataan bermaterai untuk pengajuan izin pemakaian stan Sentra Makanan dan Minuman</p>
+                        <a href="documents/FORM PERMOHONAN PEDAGANG BARU 2025.pdf" class="download-btn" download>
+                            <i class="fas fa-download me-2"></i>Download PDF
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="document-card">
+                        <div class="document-icon">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <h4 class="document-title">Form Berita Acara Survey</h4>
+                        <p class="text-muted mb-4">Dokumen untuk verifikasi administrasi dan peninjauan lapangan oleh petugas dari Dinas terkait</p>
+                        <a href="documents/FORM BAP PEDAGANG BARU 2025.pdf" class="download-btn" download>
+                            <i class="fas fa-download me-2"></i>Download PDF
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="document-card">
+                        <div class="document-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h4 class="document-title">Contoh SK Izin</h4>
+                        <p class="text-muted mb-4">Contoh Surat Keputusan Izin Pemakaian Stan yang akan diterbitkan setelah proses persetujuan selesai</p>
+                        <a href="documents/05 SK R RICKY BAGUS.pdf" class="download-btn" download>
+                            <i class="fas fa-download me-2"></i>Download PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="alert alert-info">
+                        <h5 class="alert-heading"><i class="fas fa-info-circle me-2"></i>Informasi Penting</h5>
+                        <p class="mb-2"><strong>Jangka Waktu Izin:</strong> 12 bulan</p>
+                        <p class="mb-2"><strong>Dinas Terkait:</strong> Dinas Koperasi Usaha Kecil dan Menengah dan Perdagangan Kota Surabaya</p>
+                        <p class="mb-0"><strong>Alamat:</strong> Jalan Tunjungan No. 1-3 (Lt.3) Surabaya (60275) - Telp. (031) 99001785</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Image Popup -->
     <div class="image-popup" id="imagePopup">
         <div class="image-popup-content">
@@ -510,8 +861,8 @@ require_once 'connection.php';
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-8">
-                    <h2 class="fw-bold mb-3">Siap Merasakan Pengalaman Kuliner Terbaik?</h2>
-                    <p class="fs-5 mb-4">Nikmati berbagai fasilitas lengkap dan kuliner terbaik di <?= htmlspecialchars($siteInfo['name']) ?>. Kunjungi kami sekarang!</p>
+                    <h2 class="fw-bold mb-3">Siap Menjadi Bagian dari SWK Semolowaru?</h2>
+                    <p class="fs-5 mb-4">Bergabunglah dengan puluhan tenant sukses lainnya di SWK Semolowaru. Raih kesempatan emas untuk mengembangkan bisnis kuliner Anda!</p>
                 </div>
                 <div class="col-lg-4 text-lg-end">
                     <a href="https://maps.app.goo.gl/BaHAs5VQsMKqDSKFA" class="btn btn-light btn-lg me-3" target="_blank">
@@ -675,7 +1026,6 @@ require_once 'connection.php';
             popup.classList.add('active');
         }
 
-
         function closeImagePopup() {
             const popup = document.getElementById('imagePopup');
             popup.classList.remove('active');
@@ -684,9 +1034,15 @@ require_once 'connection.php';
         // Close popup with Escape key
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') {
-                clearTimeout(hoverTimeout);
                 const popup = document.getElementById('imagePopup');
                 popup.classList.remove('active');
+            }
+        });
+
+        // Close popup when clicking outside
+        document.getElementById('imagePopup').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeImagePopup();
             }
         });
     </script>
